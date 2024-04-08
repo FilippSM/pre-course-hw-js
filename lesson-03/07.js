@@ -5,13 +5,11 @@ const numbers = [
 ];
  
 for(let i = 0; i < numbers.length; i++){
-    let innerArrayLength = numbers[i].length;
-    
-    for(let j = 0; j < innerArrayLength; j++) {
-        if (numbers[i][j] % 2 !== 0) {
-            delete numbers[i][j];
-        }
-    }
+    const numbersx = numbers[i];
+    const isOdd = (num) => num % 2 === 0;
+    const odd = numbersx.filter(isOdd);
+
+    numbers[i] = (odd); // => [1, 3, 5, 7, 9] */
 }
 
 console.log(numbers);
