@@ -19,12 +19,12 @@ const users2 = [
     },
 ];
 
-const newObj = {
+const newObjx = {
     id: 4,
     user: 'Ivan',
     surName: 'Susanin',
     address: 'Unknown'
 }
 
-users2.push(newObj)
+users2.push(newObjx)
 console.log(users2);
